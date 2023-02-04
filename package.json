@@ -1,0 +1,24 @@
+{
+    "name": "note-app_nodejs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.20.1",
+        "express": "^4.18.2",
+        "mongoose": "^6.9.0"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.16",
+        "@types/mongoose": "^5.11.97",
+        "@types/node": "^18.11.18",
+        "dotenv": "^16.0.3",
+        "typescript": "^4.9.4"
+    }
+}

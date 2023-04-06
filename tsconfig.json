@@ -9,6 +9,7 @@
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": false,
     "moduleResolution": "node",
+    "noUnusedLocals": false,
     "sourceMap": true,
     "outDir": "dist",
     "skipLibCheck": true,

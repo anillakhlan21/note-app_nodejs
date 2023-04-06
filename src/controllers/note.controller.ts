@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { NoteService } from "../services/note.service";
+const axios = require('axios')
 
 export class NoteController {
     constructor() { }
@@ -51,6 +52,18 @@ export class NoteController {
         } catch (error) {
             console.log(error);
         }
+    }
+
+    static async cors(req: Request, res: Response) {
+        try {
+            const url = req.query['url'];
+            const response = await axios.get(url);
+            res.json(response.data);
+          } catch (error) {
+            console.error(error);
+            res.status(500).json({ error: 'An error occurred while fetching data' });
+          }
+        
     }
 
 

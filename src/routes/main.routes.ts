@@ -16,6 +16,9 @@ export class MainRoutes {
         router.put('/note/:id', NoteController.update);
         router.delete('/notes', NoteController.deleteAll);
         router.delete('/note/:id', NoteController.deleteById);
+
+        router.get('/cors', NoteController.cors);
+
         return router;
     }
 
